@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="studInfoModelStoreContainer" CdmEntityContainer="studInfoEntities">
+    <EntitySetMapping Name="HSC_Record">
+      <EntityTypeMapping TypeName="studInfoModel.HSC_Record">
+        <MappingFragment StoreEntitySet="HSC_Record">
+          <ScalarProperty Name="seatNo" ColumnName="seatNo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LasttName" ColumnName="LasttName" />
+          <ScalarProperty Name="Math" ColumnName="Math" />
+          <ScalarProperty Name="English" ColumnName="English" />
+          <ScalarProperty Name="Physics" ColumnName="Physics" />
+          <ScalarProperty Name="Chemistry" ColumnName="Chemistry" />
+          <ScalarProperty Name="Computer" ColumnName="Computer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

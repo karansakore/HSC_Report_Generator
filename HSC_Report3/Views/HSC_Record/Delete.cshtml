@@ -1,0 +1,80 @@
+﻿@model HSC_Report3.HSC_Record
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HSC_Record</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LasttName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LasttName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Math)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Math)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.English)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.English)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Physics)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Physics)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chemistry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chemistry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Computer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Computer)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

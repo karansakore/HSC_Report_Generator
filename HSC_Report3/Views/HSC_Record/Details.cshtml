@@ -1,0 +1,75 @@
+﻿@model HSC_Report3.HSC_Record
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HSC_Record</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LasttName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LasttName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Math)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Math)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.English)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.English)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Physics)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Physics)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chemistry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chemistry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Computer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Computer)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.seatNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

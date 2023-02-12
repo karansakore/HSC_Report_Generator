@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/mycss.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><img src="~/Images/document-clipart-report-2.png" height="500px" width="500"/></div>
+            <div class="col-md-6">
+                @using (Html.BeginForm("ReceiveWithRequestFormData", "HSC_Record"))
+                {
+                    <div class="form-group">
+                        <br />
+                        @Html.Label("Seat Number")<br />
+                        @Html.TextBox("txtSeatNo", "h1")<br />
+                        <br />
+                        <input class="btn btn-warning" type="submit" value="Report" style="border-color:orangered"/>
+                    </div>
+                }
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
+

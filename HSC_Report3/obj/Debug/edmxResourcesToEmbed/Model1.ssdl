@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="studInfoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HSC_Record">
+    <Key>
+      <PropertyRef Name="seatNo" />
+    </Key>
+    <Property Name="seatNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="LasttName" Type="varchar" MaxLength="20" />
+    <Property Name="Math" Type="real" />
+    <Property Name="English" Type="real" />
+    <Property Name="Physics" Type="real" />
+    <Property Name="Chemistry" Type="real" />
+    <Property Name="Computer" Type="real" />
+  </EntityType>
+  <EntityContainer Name="studInfoModelStoreContainer">
+    <EntitySet Name="HSC_Record" EntityType="Self.HSC_Record" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
